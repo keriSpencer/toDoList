@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>What do you need to do today?</h1>
+    <form method="POST">
+      <input type="text" name="title" value="" placeholder="Add a todo...">
+      <button type="submit" name="button">Add todo</button>
+    </form>
+    <h3>To Dos</h3>
+    <ul id="incomplete">
+    {{#incompleteTasks}}
+        <li id="{{id}}"><button name="button" id="completedTask_{{id}}" class="markAsComplete">Mark as complete</button>{{title}}</li>
+    {{/incompleteTasks}}
+    </ul>
+    <h3>Completed Tasks</h3>
+    <ul id="complete">
+
+    </ul>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+html {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+.complete {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
